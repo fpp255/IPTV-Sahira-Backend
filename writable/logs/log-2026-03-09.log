@@ -1,0 +1,18 @@
+ERROR - 2026-03-09 01:00:08 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): SSL: Handshake timed out in /www/wwwroot/hms.sahirahotelsgroup.com/system/Email/Email.php:1910
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /www/wwwroot/hms.sahirahotelsgroup.com/system/Email/Email.php(1910): fsockopen()
+#2 /www/wwwroot/hms.sahirahotelsgroup.com/system/Email/Email.php(1818): CodeIgniter\Email\Email->SMTPConnect()
+#3 /www/wwwroot/hms.sahirahotelsgroup.com/system/Email/Email.php(1703): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /www/wwwroot/hms.sahirahotelsgroup.com/system/Email/Email.php(1597): CodeIgniter\Email\Email->spoolEmail()
+#5 /www/wwwroot/hms.sahirahotelsgroup.com/app/Controllers/Cron.php(153): CodeIgniter\Email\Email->send()
+#6 /www/wwwroot/hms.sahirahotelsgroup.com/app/Controllers/Cron.php(106): App\Controllers\Cron->sendBackupEmail()
+#7 /www/wwwroot/hms.sahirahotelsgroup.com/system/CodeIgniter.php(933): App\Controllers\Cron->backupDatabase()
+#8 /www/wwwroot/hms.sahirahotelsgroup.com/system/CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController()
+#9 /www/wwwroot/hms.sahirahotelsgroup.com/system/CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest()
+#10 /www/wwwroot/hms.sahirahotelsgroup.com/system/Boot.php(363): CodeIgniter\CodeIgniter->run()
+#11 /www/wwwroot/hms.sahirahotelsgroup.com/system/Boot.php(68): CodeIgniter\Boot::runCodeIgniter()
+#12 /www/wwwroot/hms.sahirahotelsgroup.com/public/index.php(59): CodeIgniter\Boot::bootWeb()
+#13 {main}
+ERROR - 2026-03-09 01:00:08 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2026-03-09 01:00:08 --> 

@@ -1,0 +1,26 @@
+ERROR - 2026-03-06 01:00:14 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2026-03-06 01:00:14 --> 220-sendowo.idweb.host ESMTP Exim 4.99.1 #2 Fri, 06 Mar 2026 01:00:01 +0700 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+hello: 250-sendowo.idweb.host Hello mail.sahirahotelsgroup.com [103.191.63.18]
+250-SIZE 52428800
+250-LIMITS MAILMAX=1000 RCPTMAX=50
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250 HELP
+
+from: 250 OK
+
+to: 250 Accepted
+
+to: 250 Accepted
+
+data: 354 Enter message, ending with "." on a line by itself
+
+
+quit: 
+The following SMTP error was encountered: 
+The following SMTP error was encountered: 

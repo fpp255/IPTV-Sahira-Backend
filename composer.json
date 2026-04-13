@@ -1,0 +1,8 @@
+{
+    "name": "fpp/sbhpaledang_ci4_php82",
+    "type": "project",
+    "minimum-stability": "stable",
+    "require": {
+        "midtrans/midtrans-php": "^2.6"
+    }
+}

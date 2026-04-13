@@ -1,0 +1,30 @@
+ERROR - 2026-02-02 01:00:17 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2026-02-02 01:00:17 --> 220-sendowo.idweb.host ESMTP Exim 4.99.1 #2 Mon, 02 Feb 2026 01:00:04 +0700 
+220-We do not authorize the use of this system to transport unsolicited, 
+220 and/or bulk e-mail.
+
+hello: 250-sendowo.idweb.host Hello mail.sahirahotelsgroup.com [103.191.63.18]
+250-SIZE 52428800
+250-LIMITS MAILMAX=1000 RCPTMAX=50
+250-8BITMIME
+250-PIPELINING
+250-PIPECONNECT
+250-AUTH PLAIN LOGIN
+250 HELP
+
+from: 250 OK
+
+to: 250 Accepted
+
+to: 
+The following SMTP error was encountered: 
+quit: 
+The following SMTP error was encountered: 
+ERROR - 2026-02-02 01:00:18 --> Email: sendWithSmtp throwed ErrorException: fgets(): SSL: Connection reset by peer in /www/wwwroot/hms.sahirahotelsgroup.com/system/Email/Email.php:2122
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /www/wwwroot/hms.sahirahotelsgroup.com/system/Email/Email.php(2122): fgets()
+#2 /www/wwwroot/hms.sahirahotelsgroup.com/system/Email/Email.php(2001): CodeIgniter\Email\Email->getSMTPData()
+#3 /www/wwwroot/hms.sahirahotelsgroup.com/system/Email/Email.php(2232): CodeIgniter\Email\Email->sendCommand()
+#4 [internal function]: CodeIgniter\Email\Email->__destruct()
+#5 {main}
